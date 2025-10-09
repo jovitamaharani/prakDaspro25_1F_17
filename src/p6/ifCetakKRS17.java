@@ -10,11 +10,8 @@ public class ifCetakKRS17 {
         System.out.print("Apakah UKT sudah lunas? (true / false) ");
         boolean uktLunas17 = jovita.nextBoolean();
 
-        if (uktLunas17) {
-            System.out.println("Pembayaran UKT Terverifikasi");
-            System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
-        } else {
-            System.out.println("Registrasi Ditolak. Silakan lunasi UKT terlebih dahulu");
-        }
+        String cekKondisi17 = (uktLunas17) ? "Pembayaran UKT Terverifikasi \nSilakan cetak KRS dan minta tanda tangan DPA"
+        : "Registrasi Ditolak. Silakan lunasi UKT terlebih dahulu";
+        System.out.println(cekKondisi17);
     } 
 }
