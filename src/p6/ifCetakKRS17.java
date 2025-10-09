@@ -1,3 +1,5 @@
+package p6;
+
 import java.util.Scanner;
 
 public class ifCetakKRS17 {
@@ -5,7 +7,7 @@ public class ifCetakKRS17 {
         Scanner jovita = new Scanner(System.in);
 
         System.out.println("--- Cetak KRS ---");
-        System.out.println("Apakah UKT sudah lunas? (true / false)");
+        System.out.print("Apakah UKT sudah lunas? (true / false) ");
         boolean uktLunas17 = jovita.nextBoolean();
 
         if (uktLunas17) {
