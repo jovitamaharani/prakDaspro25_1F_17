@@ -13,6 +13,6 @@ public class tugas2_17 {
             System.out.println("Angka genap");
         } else {
             System.out.println("Angka ganjil");
-        }
+        } 
     }
 }
