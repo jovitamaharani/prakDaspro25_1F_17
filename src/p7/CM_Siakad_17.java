@@ -34,6 +34,32 @@ public class CM_Siakad_17 {
         if ((pancasila17 >= 0 && pancasila17 <= 100) || (daspro17 >= 0 && daspro17 <= 100)
                 || (bing17 >= 0 && bing17 <= 100)) {
 
+
+            if (pancasila17 > 80 && pancasila17 <= 100) {
+                setarapancasila17 = 4;
+                hurufPancasila17 = "A";
+            } else if (pancasila17 > 73 && pancasila17 <= 80) {
+                setarapancasila17 = 3.5;
+                hurufPancasila17 = "B+";
+            } else if (pancasila17 > 65 && pancasila17 <= 73) {
+                setarapancasila17 = 3;
+                hurufPancasila17 = "B";
+            } else if (pancasila17 > 60 && pancasila17 <= 65) {
+                setarapancasila17 = 2.5;
+                hurufPancasila17 = "C+";
+            } else if (pancasila17 > 50 && pancasila17 <= 60) {
+                setarapancasila17 = 2;
+                hurufPancasila17 = "C";
+            } else if (pancasila17 > 39 && pancasila17 <= 50) {
+                setarapancasila17 = 1;
+                hurufPancasila17 = "D";
+            } else if (pancasila17 >= 0 && pancasila17 <= 39) {
+                setarapancasila17 = 0;
+                hurufPancasila17 = "E";
+            } else {
+                System.out.println("Nilai tidak valid harus (0-100)!!");
+            }
+
             if (daspro17 > 80 && daspro17 <= 100) {
                 setaradaspro17 = 4;
                 hurufDaspro17 = "A";
@@ -99,9 +125,11 @@ public class CM_Siakad_17 {
                 status = "TIDAK LULUS (NILAI PANCASILA D ATAU E)";
             } else if (nilai <= 60 || ip17 < 2) {
                 status = "TIDAK LULUS (nilai kurang dari 60)";
-            }
-            {
-                System.out.println();
+            } else if (hurufPancasila17.equalsIgnoreCase("e") || hurufDaspro17.equalsIgnoreCase("e")
+                    || hurufBing17.equalsIgnoreCase("e")) {
+                System.out.println("TIDAK LULUS TERDAPAT NILAI E");
+            } else {
+                System.out.println("TIDAK LULUS");
             }
 
             System.out.println("===============================================");
