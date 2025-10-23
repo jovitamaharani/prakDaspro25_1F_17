@@ -6,7 +6,7 @@ public class SiakadWhile17 {
     public static void main(String[] args) {
         Scanner jovita = new Scanner(System.in);
         double nilai17;
-
+ 
         System.out.print("Masukan jumlah mahasiswa: ");
         int jml17 = jovita.nextInt();
 
