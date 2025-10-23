@@ -21,7 +21,8 @@ public class SiakadWhile17 {
             }
 
             if (nilai17 > 80 && nilai17 <=100) {
-                System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah A");    
+                System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah A");
+                System.out.println("Bagus, Pertahankan nilainya!");
             } else if (nilai17 > 73 && nilai17 <= 80) {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah B+");
             } else if (nilai17 > 65 && nilai17 <= 73) {
