@@ -116,17 +116,24 @@ public class CM_Siakad_17 {
             double ip17 = bobot17 / totalSks17;
 
             double nilai = (pancasila17 + daspro17 + bing17) / 3;
-            if (nilai >= 60 && ip17 > 2
+            if (ip17 > 2
                     && (hurufPancasila17.equalsIgnoreCase("a") || hurufPancasila17.equalsIgnoreCase("b")
                             || hurufPancasila17.equalsIgnoreCase("c+") || hurufPancasila17.equalsIgnoreCase("c"))
-                    && ((hurufPancasila17 != "E") || (hurufPancasila17 != "E") || (hurufBing17 != "E"))) {
-                status = "Mahasiswa dinyatakan LULUS";
+                    && ((hurufPancasila17 != "E") || (hurufDaspro17 != "E")  ||(hurufBing17 != "E"))) {
+                if (ip17 >= 2 && ip17 <= 2.75) {
+                    status = "Mahasiswa LULUS dengan percobaan";
+                } else if (ip17 < 2.75) {
+                    status = "Mahasiswa dinyatakan LULUS";
+                }else {
+                    status = "Mahasiswa dinyatakan LULUS";
+                }
+                
             } else if (hurufPancasila17.equalsIgnoreCase("e") || hurufPancasila17.equalsIgnoreCase("d")) {
                 status = "TIDAK LULUS (NILAI PANCASILA D ATAU E)";
             } else if (hurufPancasila17.equalsIgnoreCase("e") || hurufDaspro17.equalsIgnoreCase("e")
                     || hurufBing17.equalsIgnoreCase("e")) {
                 System.out.println("TIDAK LULUS TERDAPAT NILAI E");
-            } else if (nilai <= 60 || ip17 < 2) {
+            } else if (ip17 < 2) {
                 status = "TIDAK LULUS (nilai kurang dari 60)";
             } else {
                 System.out.println("TIDAK LULUS");
@@ -149,9 +156,9 @@ public class CM_Siakad_17 {
             System.out.println("------------------------------------------------");
             System.out.println("Total SKS\t: " + totalSks17);
             System.out.println("Total Bobot\t: " + bobot17);
-            System.out.print("Indeks Prestasi (IP): ");
-            String.format("%.2f %n", ip17);
-            System.out.println("Status semester: " + status);
+            System.out.print("Indeks Prestasi (IP): " + String.format("%.2f", ip17));
+            
+            System.out.println("\nStatus semester: " + status);
 
         } else {
             System.out.println("Nilai tidak valid harus (0-100)!!");
