@@ -9,7 +9,7 @@ public class Star17 {
         System.out.print("Masukkan nilai n = ");
         int n17 = jovita.nextInt();
 
-        for (int i = 0; i <= n17; i++) {
+        for (int i = 0; i < n17; i++) {
             System.out.print("*");
         }
     }
