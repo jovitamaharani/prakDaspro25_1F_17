@@ -9,8 +9,8 @@ public class Square17 {
         System.out.print("Masukan nilai N = ");
         int n17 = jovita.nextInt();
 
-        for (int iOuter17 = 0; iOuter17 <= n17; iOuter17++) {
-            for (int i = 1; i <= n17; i++) {
+        for (int iOuter17 = 1; iOuter17 <= n17; iOuter17++) {
+            for (int i = 0; i <= n17; i++) {
                 System.out.print("*");
             }
             System.out.println();
