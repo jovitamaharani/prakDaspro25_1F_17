@@ -22,8 +22,13 @@ public class NilaiKelompok17 {
             }
             rataNilai17 = totalNilai17 / 5;
             System.out.println("Kelompok" + i17 + " nilai rata-rata = " + rataNilai17);
+            if (rataNilai17 > rataTertinggi17) {
+                rataTertinggi17 = rataNilai17;
+            } 
             i17++;
         }
+
+        System.out.println("Rata-rata tertinggi adalah: " + rataTertinggi17);
 
     }
 }
