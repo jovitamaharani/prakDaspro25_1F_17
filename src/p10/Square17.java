@@ -13,7 +13,6 @@ public class Square17 {
             for (int i = 0; i <= n17; i++) {
                 System.out.print("*");
             }
-            System.out.println();
         }
     }
 }
