@@ -12,5 +12,6 @@ public class Star17 {
         for (int i = 0; i <= n17; i += 2) {
             System.out.print("*");
         }
+        
     }
 }
