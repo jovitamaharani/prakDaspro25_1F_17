@@ -1,0 +1,16 @@
+package p10;
+
+import java.util.Scanner;
+
+public class Star17 {
+    public static void main(String[] args) {
+        Scanner jovita = new Scanner(System.in);
+
+        System.out.print("Masukkan nilai n = ");
+        int n17 = jovita.nextInt();
+
+        for (int i = 1; i <= n17; i++) {
+            System.out.print("*");
+        }
+    }
+}
