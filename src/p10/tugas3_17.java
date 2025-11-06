@@ -20,7 +20,7 @@ public class tugas3_17 {
 
             int totalItem17 = 0;
             for (int j = 0; j < pelanggan17; j++) {
-                System.out.print("- Pelanggan" + (j + 1) + "memesan beraoa item? ");
+                System.out.print("- Pelanggan " + (j + 1) + " memesan berapa item? ");
                 item17 = jovita.nextInt();
                 totalItem17 += item17;
             }
