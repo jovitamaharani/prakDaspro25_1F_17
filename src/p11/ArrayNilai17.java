@@ -7,15 +7,13 @@ public class ArrayNilai17 {
         Scanner jovita = new Scanner(System.in);
 
         int nilaiAkhir17[] = new int[10];
-        for (int i = 0; i < nilaiAkhir17.length; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("Masukan nilai akhir ke-" + i + " : ");
             nilaiAkhir17[i] = jovita.nextInt();
         }
 
         for (int i = 0; i < 10; i++) {
-            if (nilaiAkhir17[i] > 70) {
-                System.out.println("Mahasiswa ke-" + i + " lulus");
-            }
+            System.out.println("Nilai akhir ke-" + (i + 1) + " adalah " + nilaiAkhir17[i]);
         }
     }
 }
