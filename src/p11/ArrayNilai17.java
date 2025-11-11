@@ -7,8 +7,8 @@ public class ArrayNilai17 {
         Scanner jovita = new Scanner(System.in);
 
         int nilaiAkhir17[] = new int[10];
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Masukan nilai akhir ke-" + (i + 1) + " : ");
+        for (int i = 0; i < nilaiAkhir17.length; i++) {
+            System.out.print("Masukan nilai akhir ke-" + i + " : ");
             nilaiAkhir17[i] = jovita.nextInt();
         }
 
