@@ -6,13 +6,13 @@ public class SearchNilai17 {
     public static void main(String[] args) {
         Scanner jovita = new Scanner(System.in);
         int hasil17 = 0;
-        
+
         System.out.print("Masukan banyaknya nilai yang akan diinput: ");
         int jmlNilai17 = jovita.nextInt();
         int[] arrNilai17 = new int[jmlNilai17];
 
         for (int i = 0; i < jmlNilai17; i++) {
-            System.out.print("Masukan nilai mahasiswa ke-" + (i+1) + " : ");
+            System.out.print("Masukan nilai mahasiswa ke-" + (i + 1) + " : ");
             arrNilai17[i] = jovita.nextInt();
         }
 
@@ -26,8 +26,12 @@ public class SearchNilai17 {
             }
         }
 
+        if (hasil17 == 0) {
+            System.out.println("nilai tidak ditemukan");
+        } else {
+            System.out.println("Nilai " + key17 + " ketemu, merupakan nilai mahasiswa ke-" + hasil17);
+        }
         System.out.println();
-        System.out.println("Nilai " + key17 + " ketemu, merupakan nilai mahasiswa ke-" + hasil17);
-        System.out.println();   
+        System.out.println();
     }
 }
