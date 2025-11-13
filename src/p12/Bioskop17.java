@@ -17,5 +17,11 @@ public class Bioskop17 {
         System.out.printf("%s \t %s\n", penonton17[1][0], penonton17[1][1]);
         System.out.printf("%s \t %s\n", penonton17[2][0], penonton17[2][1]);
         System.out.printf("%s \t %s\n", penonton17[3][0], penonton17[3][1]);
+
+        System.out.println(penonton17.length);
+        System.out.println(penonton17[0].length);
+        System.out.println(penonton17[1].length);
+        System.out.println(penonton17[2].length);
+        System.out.println(penonton17[3].length);
     }
 }
