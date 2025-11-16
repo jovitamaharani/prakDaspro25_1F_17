@@ -52,6 +52,16 @@ public class BioskopWithScanner17 {
                     }
                     break;
                 case 2:
+                    for (int i17 = 0; i17 < penonton17.length; i17++) {
+                        for (int j17 = 0; j17 < penonton17[i17].length; j17++) {
+                            if (penonton17[i17][j17] == null) {
+                                System.out.printf("Baris %d, Kolom %d: %s\n", (i17 + 1), (j17 + 1), "***");
+                            } else {
+                                System.out.printf("Baris %d, Kolom %d: %s\n", (i17 + 1), (j17 + 1),
+                                        penonton17[i17][j17]);
+                            }
+                        }
+                    }
                     break;
                 case 3:
                     break;
