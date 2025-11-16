@@ -34,9 +34,18 @@ public class BioskopWithScanner17 {
 
                         penonton17[baris17 - 1][kolom17 - 1] = nama17;
 
+                        if (baris17 < 1 || baris17 > 4 || kolom17 < 1 || kolom17 > 2) {
+                            System.out.println("Nomor baris/kolom tidak valid");
+                        } else if (penonton17[baris17 - 1][kolom17 - 1] != null) {
+                            System.out.println("Kursi tidak tersedia");
+                        } else {
+                            penonton17[baris17 - 1][kolom17 - 1] = nama17;
+                            System.out.println("Data penonton berhasil dimasukkan.");
+                            break;
+                        }
+
                         System.out.print("Input penonton lainnya? (y/n): ");
                         next17 = jovita.nextLine();
-
                         if (next17.equalsIgnoreCase("n")) {
                             break;
                         }
