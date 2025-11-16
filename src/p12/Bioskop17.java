@@ -22,5 +22,6 @@ public class Bioskop17 {
         for (int i = 0; i < penonton17.length; i++){
             System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton17[i]));
         }
+        
     }
 }
