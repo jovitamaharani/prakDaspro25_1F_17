@@ -10,7 +10,7 @@ public class Numbers17 {
         myNumbers17[2] = new int[1];
 
         for (int i17 = 0; i17 < myNumbers17.length; i17++) {
-            System.out.println(Arrays.toString(myNumbers17[i17]));
+            System.out.println("Panjang baris ke-" + (i17 + 1) + ": " + myNumbers17[i17].length);
         }
     }
 }
