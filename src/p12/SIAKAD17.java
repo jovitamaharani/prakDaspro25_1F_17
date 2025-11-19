@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class SIAKAD17 {
     public static void main(String[] args) {
         Scanner jovita = new Scanner(System.in);
-        
-        int[][] nilai17 = new int[4][3];
+
+        System.out.print("Masukkan jumlah siswa: ");
+        int jmlSiswa17 = jovita.nextInt();
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jmlMatkul17 = jovita.nextInt();
+
+        int[][] nilai17 = new int[jmlSiswa17][jmlMatkul17];
 
         for (int i17 = 0; i17 < nilai17.length; i17++) {
             System.out.println("Input nilai mahasiswa ke-" + (i17 + 1));
