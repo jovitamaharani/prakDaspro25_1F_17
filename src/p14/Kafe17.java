@@ -23,5 +23,6 @@ public class Kafe17 {
     }
     public static void main(String[] args) {
         Menu("Budi", true, "DISKON30");
+        
     }
 }
