@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class tugas3_17 {
 
     public static void inputPenjualan17(int[][] penjualan17, String[] menu17, int hari17, Scanner jovita) {
+        System.out.println("\n--- Isi Data Penjualan ---");
         for (int i = 0; i < menu17.length; i++) {
             System.out.println("Input data untuk " + menu17[i] + ":");
             for (int j = 0; j < hari17; j++) {
@@ -43,7 +44,7 @@ public class tugas3_17 {
                 menuTop17 = menu17[i];
             }
         }
-        System.out.println("Menu dengan penjualan tertinggi: " + menuTop17 + " (Total: " + totalTertinggi17 + ")");
+        System.out.println("\nMenu dengan penjualan tertinggi: " + menuTop17 + " (Total: " + totalTertinggi17 + ")");
     }
 
     public static void rataMenu17(int[][] penjualan17, String[] menu17, int hari17) {
@@ -60,9 +61,21 @@ public class tugas3_17 {
 
     public static void main(String[] args) {
         Scanner jovita = new Scanner(System.in);
-        int hari17 = 7;
-        String[] menu17 = { "Kopi", "Teh", "Es Kelapa Muda", "Roti Bakar", "Gorengan" };
-        int[][] penjualan17 = new int[menu17.length][hari17];
+
+        System.out.print("Masukkan jumlah menu: ");
+        int jumlahMenu17 = jovita.nextInt();
+        System.out.print("Masukkan jumlah hari: ");
+        int hari17 = jovita.nextInt();
+
+        String[] menu17 = new String[jumlahMenu17];
+        int[][] penjualan17 = new int[jumlahMenu17][hari17];
+
+        jovita.nextLine(); 
+        System.out.println("\n--- Input Nama Menu ---");
+        for (int i = 0; i < jumlahMenu17; i++) {
+            System.out.print("Nama menu ke-" + (i + 1) + ": ");
+            menu17[i] = jovita.nextLine();
+        }
 
         inputPenjualan17(penjualan17, menu17, hari17, jovita);
         tampilTabel17(penjualan17, menu17, hari17);
