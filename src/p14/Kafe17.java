@@ -38,6 +38,7 @@ public class Kafe17 {
         Scanner jovita = new Scanner(System.in);
         Menu("Budi", true, "DISKON30");
 
+        int totalKeseluruhan17 = 0;
         while (true) {
             System.out.print("\nMasukkan nomor menu yang ingin Anda pesan (0 untuk selesai): ");
             int pilihanMenu17 = jovita.nextInt();
@@ -52,6 +53,8 @@ public class Kafe17 {
 
             double totalHarga17 = hitungTotalHarga(pilihanMenu17, banyakItem17, kodePromo17);
             System.out.println("Total Harga pesanan Anda: Rp. " + totalHarga17);
+            totalKeseluruhan17 += totalHarga17;
+            System.out.println("Total keseluruhan pesanan Anda: Rp. " + totalKeseluruhan17);
         }
     }
 }
